@@ -1,1 +1,266 @@
-<h1>Konference 2020</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>
+        Loader.load()
+    </script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Web Science konference</title>
+</head>
+
+<body>
+    <a href="#" id="to-top" class="hidden"><i class="fa fa-angle-up" style="font-size: 28px;color: white;"></i></a>
+
+    <section id="welcome" class="overlay" style="padding-top:0;padding-bottom:0;">
+        <div class="text">
+            <h5 class="event-date">30. 5. 2020</h5>
+            <h1 class="brand">Web Science</h1>
+            <h6 class="event">Konference pro webové vědce</h6>
+        </div>
+    </section>
+
+    <header>
+        <div class="container">
+            <nav id="menu-navbar" class="navbar navbar-expand-md navbar-dark">
+                <div id="header-title" class="navbar-brand"></div>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="collapse_target">
+                    <ul id="menu" class="navbar-nav menu-smaller">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#CFP">CFP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#program">Program</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vstupenky">Vstupenky</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#misto">Místo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sponzoring">Sponzoring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#kontakt">Kontakt</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="CFP" class="section">
+        <div class="container center">
+            <h2>Call for papers</h2>
+            <p class="description">Přihlaš svoji přednášku do CFP a buď mezi první</p>
+            <a class="my-btn" href="#">Přihlaš svou přednášku</a>
+        </div>
+    </section>
+
+    <section id="program" class="section">
+        <div class="container center">
+            <h2>Program</h2>
+            <p class="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur sagittis hendrerit ante. Vivamus ac leo pretium faucibus. Duis pulvinar. Nullam dapibus fermentum ipsum.</p>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>9:00</span>
+                </div>
+                <div class="program-text">
+                    <h3 class="program-name">Otevření dveří a registrace</h3>
+                    <p class="program-description">Příjďte, vyzvedněte si program, triko a koblížek</p>
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>9:00</span>
+                </div>
+                <div class="program-text">
+                    <h3 class="program-name">Otevření dveří a registrace</h3>
+                    <p class="program-description">Příjďte, vyzvedněte si program, triko a koblížek</p>
+                </div>
+            </div>
+            <div class="program-box">
+                <div class="program-time">
+                    <span>9:00</span>
+                </div>
+                <div class="program-text">
+                    <h3 class="program-name">Otevření dveří a registrace</h3>
+                    <p class="program-description">Příjďte, vyzvedněte si program, triko a koblížek</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vstupenky" class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Vstupenky</h2>
+            <br>
+            <br>
+            <div class="buy-box">
+                <div class="buy-package">
+                    <span class="sale-label">V prodeji</span>
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na konferenci</li>
+                            <li>Káva a pečivo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn">Koupit</a>
+                </div>
+                <div class="buy-package no-sale">
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na konferenci</li>
+                            <li>Káva a pečivo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn disabled">Koupit</a>
+                </div>
+                <div class="buy-package no-sale">
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na konferenci</li>
+                            <li>Káva a pečivo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn disabled">Koupit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="misto" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 map">
+                    <div id="mapa" style="height:300px;"></div>
+                </div>
+                <div class="col-md-6 text">
+                    <h2>Jak sek nám dostanete</h2>
+                    <ul>
+                        <li>MHD - Tramvají 12 na zastávku X</li>
+                        <li>Autem parkujte na vyznačených místech</li>
+                        <li>Letadlem na BRQ pak autobusem 78</li>
+                        <li>Lodí na tramvaj 1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponzoring" class="section section-with-buy-box">
+        <div class="container center">
+            <h2>Staňte partnerem konference</h2>
+            <p class="description">Jako partneři konference získáte</p>
+            <div class="buy-box">
+                <div class="buy-package left-item">
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na konferenci</li>
+                            <li>Káva a pečivo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn">Koupit</a>
+                </div>
+                <div class="buy-package no-sale">
+                    <h6>Blind</h6>
+                    <div class="package-price">
+                        <span>500 Kč</span>
+                    </div>
+                    <div class="package-description">
+                        <ul>
+                            <li>Vstup na konferenci</li>
+                            <li>Káva a pečivo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="my-btn disabled">Koupit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer row">
+                <div class="socials col-md-4 center">
+                    <a href="#" target="_blank"><i class="fa fa-facebook" style="font-size:30px;color:white"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-instagram" style="font-size:30px;color:white"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-twitter" style="font-size:30px;color:white"></i></a>
+                </div>
+                <div class="labels col-md-4 center"></div>
+                <div class="contact col-md-4">
+                    <span class="contact-title">Kontakt</span>
+                    <div class="contact-brand"></div>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Web Science s.r.o.</td>
+                            </tr>
+                            <tr>
+                                <td>Adresa: U někoho doma 123</td>
+                            </tr>
+                            <tr>
+                                <td>E-Mail: <a href="mailto:info@websciemce.cz">info@webscience.cz</a></td>
+                            </tr>
+                            <tr>
+                                <td>Tel.: <a href="tel:+420733348366">+420 733 348 366</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div class="copyright">
+                <div class="copyright-space">
+                    <span>Created by web science for web science</span>
+                </div>
+                <div class="smsticket-info">
+                    <span>Prodej vstupenek zajišťuje&nbsp;</span>
+                    <a href="https://www.smsticket.cz/" target="_blank">
+                        <img src="https://www.skoleninasbavi.cz/img/smsticket-logo-white.png" height="17">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
