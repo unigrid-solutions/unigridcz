@@ -12,6 +12,8 @@ a:hover {
 a.disabled {
     pointer-events: none;
     cursor: default;
+    background: transparent;
+    color: #3CB371;
 }
 
 h2 {
@@ -156,6 +158,14 @@ header {
 #menu a:link {
     color: white;
     font-size: 17px;
+}
+
+
+/* Iframe */
+
+.iframe-lightbox .content-holder {
+    max-width: 906px;
+    height: 95%;
 }
 
 
