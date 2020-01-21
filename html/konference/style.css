@@ -12,6 +12,8 @@ a:hover {
 a.disabled {
     pointer-events: none;
     cursor: default;
+    background: transparent;
+    color: #3CB371;
 }
 
 h2 {
@@ -159,6 +161,14 @@ header {
 }
 
 
+/* Iframe */
+
+.iframe-lightbox .content-holder {
+    max-width: 906px;
+    height: 95%;
+}
+
+
 /* Localizace */
 
 #mapa {
@@ -176,6 +186,11 @@ header {
 
 #misto .text {
     padding-left: 50px;
+    text-align: left;
+}
+
+#misto ul {
+    list-style: none;
 }
 
 #misto ul li {
@@ -244,6 +259,7 @@ header {
     display: flex;
     margin: 1.5em 0;
     padding-top: 1.5rem;
+    padding-bottom: 1.0rem;
 }
 
 .program-box div {
@@ -336,6 +352,10 @@ header {
     text-align: left;
 }
 
+#sponzoring .package-description ul {
+    min-height: 330px;
+}
+
 .package-description ul li {
     color: #51545b;
     font-size: 100%;
@@ -360,6 +380,10 @@ header {
     -o-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     width: 150px;
+}
+
+.sold-out {
+    opacity: 0.5;
 }
 
 @media (max-width: 991.98px) {
