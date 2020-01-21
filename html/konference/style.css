@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono&display=swap');
+
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
 }
 
 a:link,
