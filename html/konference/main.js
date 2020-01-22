@@ -35,15 +35,34 @@ document.querySelectorAll(".nav-link").forEach(item => {
 });
 
 
-//To top arrow
-
+//Sticky navbar & To top arrow
 let arrowToTop = document.getElementById("to-top");
-let menu = document.querySelector("header");
-let menuTop = menu.offsetTop;
-let menuHeight = menu.offsetHeight;
+let navbar = document.getElementById("menu-space");
+let welcome = document.getElementById("welcome");
+let welcomeTop = welcome.offsetTop;
+let welcomeHeight = welcome.offsetHeight;
+let sticky = welcomeTop + welcomeHeight;
+
+window.addEventListener("resize", () => {
+    welcomeTop = welcome.offsetTop;
+    welcomeHeight = welcome.offsetHeight;
+    sticky = welcomeTop + welcomeHeight;
+});
+
+window.addEventListener("load", () => {
+    welcomeTop = welcome.offsetTop;
+    welcomeHeight = welcome.offsetHeight;
+    sticky = welcomeTop + welcomeHeight;
+});
 
 window.addEventListener("scroll", () => {
-    if (window.pageYOffset > (menuTop + menuHeight + 20)) {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
+
+    if (window.pageYOffset > (welcomeTop + welcomeHeight + 70)) {
         arrowToTop.classList.remove("hidden");
     } else {
         arrowToTop.classList.add("hidden");

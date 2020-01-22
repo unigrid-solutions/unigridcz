@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code|Fira+Mono&display=swap');
-
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -148,6 +147,7 @@ footer {
 
 header {
     background: #3CB371;
+    z-index: 900;
 }
 
 #menu-navbar {
@@ -161,6 +161,22 @@ header {
 #menu a:link {
     color: white;
     font-size: 17px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 141.8px;
+}
+
+@media (max-width: 575.98px) {
+    .sticky+.content {
+        padding-top: 132.6px;
+    }
 }
 
 
@@ -199,6 +215,7 @@ header {
 #misto ul li {
     color: #5d5e5a;
     font-size: 1.2em;
+    padding-bottom: 10px;
 }
 
 
@@ -274,6 +291,7 @@ header {
     font-size: 1.75em;
     line-height: 1.2;
     opacity: .5;
+    margin-bottom: 24px;
     max-width: 25%;
     text-align: right;
 }
