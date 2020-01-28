@@ -187,6 +187,11 @@ header {
     height: 95%;
 }
 
+.iframe-lightbox .content {
+    height: 100%!important;
+    padding-bottom: 0!important;
+}
+
 
 /* Localizace */
 
@@ -203,6 +208,10 @@ header {
     margin-top: .3em;
 }
 
+#misto .map {
+    margin-bottom: 25px;
+}
+
 #misto .text {
     padding-left: 50px;
     text-align: left;
@@ -210,12 +219,20 @@ header {
 
 #misto ul {
     list-style: none;
+    padding-inline-start: 0;
 }
 
 #misto ul li {
     color: #5d5e5a;
     font-size: 1.2em;
     padding-bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+    #misto .text {
+        padding-left: 15px;
+        text-align: left;
+    }
 }
 
 
@@ -332,6 +349,43 @@ header {
     justify-content: center;
 }
 
+#sponzoring .buy-package {
+    width: 40%;
+}
+
+#sponzoring .package-description ul {
+    min-height: 260px;
+}
+
+@media (max-width: 1199.98px) {
+    #sponzoring .package-description ul {
+        min-height: 300px;
+    }
+}
+@media (max-width: 991.98px) {
+    #sponzoring  .buy-package {
+        width: 48%;
+    }
+    #sponzoring .package-description ul {
+        min-height: 415px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    #sponzoring  .buy-package {
+        width: 65%;
+    }
+    #sponzoring .package-description ul {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #sponzoring  .buy-package {
+        width: 95%;
+        max-width: 300px;
+    }
+}
 
 /* Ticket */
 
@@ -370,10 +424,7 @@ header {
     margin-bottom: 10px;
     padding-inline-start: 60px;
     text-align: left;
-}
-
-#sponzoring .package-description ul {
-    min-height: 330px;
+    min-height: 130px;
 }
 
 .package-description ul li {
@@ -406,9 +457,9 @@ header {
     opacity: 0.5;
 }
 
-@media (max-width: 991.98px) {
-    .left-item {
-        margin-right: 25;
+@media (max-width: 1199.98px) {
+    .package-description ul {
+        min-height: 160px;
     }
 }
 
