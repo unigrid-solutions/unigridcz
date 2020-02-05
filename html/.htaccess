@@ -7,8 +7,5 @@
 
 	# non www -> www - CZ
 	RewriteEngine on
-	RewriteCond %{HTTP_HOST} ^webscience.cz.test [NC]
-	RewriteRule ^(.*)$ https://www.webscience.cz.test/$1 [L,R=301]
-
-	RewriteCond %{HTTP_HOST} ^webscience\.cz\.test [NC]
-	RewriteRule ^(.*)$ https://%{HTTP_HOST}/konference [R=301,L]
+	RewriteCond %{HTTP_HOST} ^webscience.cz [NC]
+	RewriteRule ^(.*)$ https://www.webscience.cz/$1 [L,R=301]
