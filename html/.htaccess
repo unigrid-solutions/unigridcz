@@ -1,13 +1,1 @@
 Header set Strict-Transport-Security "max-age=31536000"
-
-# přesměrování z HTTP na HTTPS
-RewriteCond %{HTTPS} =off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-# soubory začínající tečkou není možné zobrazit v prohlížeči
-RewriteRule /\.|^\. - [F]
-
-# non www -> www - CZ
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^webscience.cz [NC]
-RewriteRule ^(.*)$ https://www.webscience.cz/$1 [L,R=301]
