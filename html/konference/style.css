@@ -311,6 +311,15 @@ header {
     padding-top: 1.5rem;
 }
 
+.program-time img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    margin-top: 100%;
+}
+
 .program-box div {
     padding-left: 15px;
     padding-right: 15px;
@@ -348,6 +357,10 @@ header {
     }
     .program-time {
         font-size: 1.35em;
+    }
+    .program-time img {
+        width: 80px;
+        height: 80px;
     }
 }
 
