@@ -306,18 +306,20 @@ header {
 
 .program-box {
     background: white;
-    display: flex;
     margin: 1.5em 0;
     padding-top: 1.5rem;
 }
 
+.program-row {
+    display: flex;
+}
+
 .program-time img {
-    width: 120px;
-    height: 120px;
     border-radius: 50%;
     filter: grayscale(1);
     -webkit-filter: grayscale(1);
-    margin-top: 100%;
+    margin-top: -15%;
+    width: 100%;
 }
 
 .program-box div {
