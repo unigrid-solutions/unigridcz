@@ -331,7 +331,7 @@ header {
     flex: 1;
     font-size: 1.75em;
     line-height: 1.2;
-    opacity: .5;
+    color: grey;
     margin-bottom: 24px;
     max-width: 25%;
     text-align: right;
