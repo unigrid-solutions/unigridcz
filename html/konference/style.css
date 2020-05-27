@@ -35,6 +35,10 @@ hr {
     background: silver;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     text-align: center;
 }
@@ -253,7 +257,7 @@ header {
 
 .description {
     color: #5d5e5a;
-    font-size: 1.25em;
+    font-size: 1.5em;
     margin-bottom: 50px;
 }
 
@@ -385,6 +389,14 @@ header {
     min-height: 260px;
 }
 
+#sponzoring img {
+    margin-bottom: 40px;
+}
+
+.sponzors-list {
+    margin-top: 40px;
+}
+
 @media (max-width: 1199.98px) {
     #sponzoring .package-description ul {
         min-height: 300px;
@@ -404,6 +416,9 @@ header {
     #sponzoring .buy-package {
         width: 65%;
     }
+    #sponzoring img {
+         margin-bottom: 20px;
+     }
     #sponzoring .package-description ul {
         min-height: auto;
     }
