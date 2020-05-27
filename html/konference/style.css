@@ -364,9 +364,11 @@ header {
     .program-time {
         font-size: 1.35em;
     }
+    .program-time.image {
+        padding: 0;
+    }
     .program-time img {
-        width: 80px;
-        height: 80px;
+        max-width: 80px;
     }
 }
 
