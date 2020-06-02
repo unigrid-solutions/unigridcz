@@ -1,0 +1,7 @@
+{
+  "scope": "websciencecz",
+  "name": "websciencecz",
+  "rewrites": [
+    { "source": "/konference/", "destination": "/html/konference/index.html" }
+  ]
+}
