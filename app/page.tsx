@@ -324,15 +324,12 @@ export default function Home() {
               </a>
             </div>
 
-            {/* Secondary - IT infrastruktura */}
+            {/* IT infrastruktura - info */}
             <div className="mt-8 max-w-2xl">
-              <a
-                href="/datove-site"
-                className="group flex items-center bg-white border border-neutral-200 rounded-xl p-6 hover:border-primary-300 hover:shadow-lg transition-all"
-              >
-                <div className="w-10 h-10 bg-neutral-100 border border-neutral-200 rounded-lg flex items-center justify-center mr-5 flex-shrink-0">
+              <div className="flex items-center bg-neutral-100 rounded-xl p-6">
+                <div className="w-10 h-10 bg-white border border-neutral-200 rounded-lg flex items-center justify-center mr-5 flex-shrink-0">
                   <svg
-                    className="w-5 h-5 text-neutral-500"
+                    className="w-5 h-5 text-neutral-400"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -345,7 +342,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <div className="flex-grow">
+                <div>
                   <h3 className="font-heading text-base font-bold text-neutral-900 mb-0.5">
                     IT infrastruktura a datové sítě
                   </h3>
@@ -354,20 +351,7 @@ export default function Home() {
                     pro firmy i stavby.
                   </p>
                 </div>
-                <svg
-                  className="w-5 h-5 text-neutral-300 group-hover:text-primary-600 group-hover:translate-x-1 transition-all flex-shrink-0 ml-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </a>
+              </div>
             </div>
           </div>
         </section>

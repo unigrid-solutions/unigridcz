@@ -62,14 +62,6 @@ export default function Footer() {
                   Zabezpečení
                 </a>
               </li>
-              <li>
-                <a
-                  href="/datove-site"
-                  className="text-neutral-500 hover:text-white transition-colors link-reveal"
-                >
-                  IT infrastruktura
-                </a>
-              </li>
             </ul>
           </div>
 
