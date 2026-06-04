@@ -26,18 +26,21 @@ export default function Zabezpeceni() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-16 md:pt-20">
-          <div className="bg-gradient-to-br from-security-50 via-neutral-50 to-white">
+        <section className="pt-20 md:pt-24 noise-bg">
+          <div className="dot-grid">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
               <div className="max-w-4xl">
-                <div className="inline-block bg-security-100 text-security-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                  Bezpečnostní systémy
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="h-px w-12 bg-neutral-700"></div>
+                  <span className="font-mono text-xs tracking-widest uppercase text-neutral-600">
+                    Bezpečnostní systémy
+                  </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight tracking-tight mb-6">
                   Profesionální{" "}
-                  <span className="text-security-600">zabezpečení objektů</span>
+                  <span className="text-neutral-600">zabezpečení objektů</span>
                 </h1>
-                <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-neutral-500 mb-8 leading-relaxed">
                   Instalace a servis elektronických zabezpečovacích systémů
                   Jablotron a moderních kamerových systémů. Komplexní ochrana pro
                   firmy i domácnosti.
@@ -45,13 +48,13 @@ export default function Zabezpeceni() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="#kontakt"
-                    className="inline-block bg-security-600 text-white px-8 py-4 rounded-lg hover:bg-security-700 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center bg-neutral-900 text-white px-8 py-4 rounded-full hover:bg-neutral-700 transition-colors font-heading font-semibold text-center"
                   >
                     Poptat zabezpečení
                   </a>
                   <a
                     href="#sluzby"
-                    className="inline-block border-2 border-security-600 text-security-600 px-8 py-4 rounded-lg hover:bg-security-50 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center border-2 border-neutral-300 text-neutral-700 px-8 py-4 rounded-full hover:border-neutral-900 transition-colors font-heading font-semibold text-center"
                   >
                     Naše služby
                   </a>
@@ -62,13 +65,20 @@ export default function Zabezpeceni() {
         </section>
 
         {/* Services Section */}
-        <section id="sluzby" className="py-20 md:py-32 bg-white">
+        <section id="sluzby" className="py-20 md:py-32 bg-white noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-12 bg-neutral-700"></div>
+                <span className="font-mono text-xs tracking-widest uppercase text-neutral-600">
+                  Služby
+                </span>
+                <div className="h-px w-12 bg-neutral-700"></div>
+              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Co nabízíme
               </h2>
-              <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              <p className="text-lg text-neutral-500 max-w-2xl mx-auto">
                 Kompletní řešení zabezpečení od návrhu přes instalaci až po
                 pravidelný servis.
               </p>
@@ -76,10 +86,10 @@ export default function Zabezpeceni() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* EZS */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="w-14 h-14 bg-security-100 rounded-lg flex items-center justify-center mb-6">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-neutral-100 rounded-xl flex items-center justify-center mb-6">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -92,28 +102,28 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   EZS Jablotron
                 </h3>
-                <p className="text-neutral-600 leading-relaxed mb-4">
+                <p className="text-neutral-500 leading-relaxed mb-4">
                   Elektronické zabezpečovací systémy od českého výrobce. Spolehlivá
                   detekce narušení s možností vzdáleného ovládání.
                 </p>
-                <ul className="space-y-2 text-sm text-neutral-600">
+                <ul className="space-y-2 text-sm text-neutral-500">
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Bezdrátové i drátové systémy
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Ovládání přes aplikaci MyJablotron
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Napojení na PCO
@@ -122,10 +132,10 @@ export default function Zabezpeceni() {
               </div>
 
               {/* Kamery */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="w-14 h-14 bg-security-100 rounded-lg flex items-center justify-center mb-6">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-neutral-100 rounded-xl flex items-center justify-center mb-6">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -138,28 +148,28 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Kamerové systémy
                 </h3>
-                <p className="text-neutral-600 leading-relaxed mb-4">
+                <p className="text-neutral-500 leading-relaxed mb-4">
                   Moderní IP kamerové systémy s vysokým rozlišením. Vzdálený přístup
                   k záznamům odkudkoliv.
                 </p>
-                <ul className="space-y-2 text-sm text-neutral-600">
+                <ul className="space-y-2 text-sm text-neutral-500">
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     4K rozlišení
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Noční vidění
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Detekce pohybu a AI analýza
@@ -168,10 +178,10 @@ export default function Zabezpeceni() {
               </div>
 
               {/* Přístupové systémy */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="w-14 h-14 bg-security-100 rounded-lg flex items-center justify-center mb-6">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+                <div className="w-14 h-14 bg-neutral-100 rounded-xl flex items-center justify-center mb-6">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -184,28 +194,28 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Přístupové systémy
                 </h3>
-                <p className="text-neutral-600 leading-relaxed mb-4">
-                  Řízení přístupu do objektů pomocí karet, čipů nebo biometrie.
+                <p className="text-neutral-500 leading-relaxed mb-4">
+                  Řízení přístupu do objektů pomocí karet a čipů.
                   Evidence vstupů a časová omezení.
                 </p>
-                <ul className="space-y-2 text-sm text-neutral-600">
+                <ul className="space-y-2 text-sm text-neutral-500">
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     RFID karty a čipy
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Kódové klávesnice
                   </li>
                   <li className="flex items-center gap-2">
-                    <svg className="w-4 h-4 text-security-600" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-4 h-4 text-neutral-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
                     Integrace s docházkovým systémem
@@ -217,11 +227,17 @@ export default function Zabezpeceni() {
         </section>
 
         {/* Why Jablotron Section */}
-        <section className="py-20 md:py-32 bg-neutral-50">
+        <section className="py-20 md:py-32 bg-neutral-50 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="h-px w-12 bg-neutral-700"></div>
+                  <span className="font-mono text-xs tracking-widest uppercase text-neutral-600">
+                    Partner
+                  </span>
+                </div>
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-6">
                   Proč Jablotron?
                 </h2>
                 <div className="space-y-4 text-neutral-600 leading-relaxed">
@@ -238,7 +254,7 @@ export default function Zabezpeceni() {
                 <ul className="mt-8 space-y-4">
                   <li className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-security-600 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 text-neutral-600 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -255,7 +271,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-security-600 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 text-neutral-600 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -272,7 +288,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-security-600 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 text-neutral-600 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -289,7 +305,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start gap-3">
                     <svg
-                      className="w-6 h-6 text-security-600 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 text-neutral-600 flex-shrink-0 mt-0.5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -307,12 +323,12 @@ export default function Zabezpeceni() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-security-600 via-security-700 to-neutral-800 rounded-2xl p-8 text-white">
-                <h3 className="text-2xl font-bold mb-6">Kompletní servis</h3>
+              <div className="bg-neutral-900 rounded-2xl p-8 text-white">
+                <h3 className="font-heading text-2xl font-bold mb-6">Kompletní servis</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <svg
-                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -326,7 +342,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -340,7 +356,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -354,7 +370,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -368,7 +384,7 @@ export default function Zabezpeceni() {
                   </li>
                   <li className="flex items-start">
                     <svg
-                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5"
+                      className="w-6 h-6 mr-3 flex-shrink-0 mt-0.5 text-primary-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -387,19 +403,26 @@ export default function Zabezpeceni() {
         </section>
 
         {/* Use Cases */}
-        <section className="py-20 md:py-32 bg-white">
+        <section className="py-20 md:py-32 bg-white noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <div className="h-px w-12 bg-neutral-700"></div>
+                <span className="font-mono text-xs tracking-widest uppercase text-neutral-600">
+                  Využití
+                </span>
+                <div className="h-px w-12 bg-neutral-700"></div>
+              </div>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Pro koho je zabezpečení vhodné
               </h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="bg-neutral-50 rounded-xl p-6 text-center">
-                <div className="w-16 h-16 bg-security-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-neutral-50 rounded-2xl p-6 text-center">
+                <div className="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -412,16 +435,16 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Rodinné domy</h3>
-                <p className="text-sm text-neutral-600">
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Rodinné domy</h3>
+                <p className="text-sm text-neutral-500">
                   Ochrana majetku a rodiny s možností vzdáleného ovládání
                 </p>
               </div>
 
-              <div className="bg-neutral-50 rounded-xl p-6 text-center">
-                <div className="w-16 h-16 bg-security-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-neutral-50 rounded-2xl p-6 text-center">
+                <div className="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -434,16 +457,16 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Kanceláře a firmy</h3>
-                <p className="text-sm text-neutral-600">
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Kanceláře a firmy</h3>
+                <p className="text-sm text-neutral-500">
                   Kontrola přístupu zaměstnanců a ochrana citlivých dat
                 </p>
               </div>
 
-              <div className="bg-neutral-50 rounded-xl p-6 text-center">
-                <div className="w-16 h-16 bg-security-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-neutral-50 rounded-2xl p-6 text-center">
+                <div className="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -456,16 +479,16 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Sklady a haly</h3>
-                <p className="text-sm text-neutral-600">
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Sklady a haly</h3>
+                <p className="text-sm text-neutral-500">
                   Rozsáhlé objekty s potřebou pokrytí velkých ploch
                 </p>
               </div>
 
-              <div className="bg-neutral-50 rounded-xl p-6 text-center">
-                <div className="w-16 h-16 bg-security-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-neutral-50 rounded-2xl p-6 text-center">
+                <div className="w-16 h-16 bg-neutral-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-security-600"
+                    className="w-8 h-8 text-neutral-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -478,8 +501,8 @@ export default function Zabezpeceni() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Obchody</h3>
-                <p className="text-sm text-neutral-600">
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Obchody</h3>
+                <p className="text-sm text-neutral-500">
                   Prevence krádeží a monitoring prodejních prostor
                 </p>
               </div>
@@ -488,26 +511,26 @@ export default function Zabezpeceni() {
         </section>
 
         {/* CTA Section */}
-        <section id="kontakt" className="py-20 md:py-32 bg-gradient-to-br from-security-600 to-neutral-800">
+        <section id="kontakt" className="py-20 md:py-32 bg-neutral-900 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white tracking-tight mb-6">
                 Zabezpečte svůj objekt
               </h2>
-              <p className="text-lg text-security-100 mb-8">
+              <p className="text-lg text-neutral-400 mb-8">
                 Kontaktujte nás pro bezplatnou konzultaci. Připravíme návrh řešení
                 na míru vašim potřebám.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:info@unigrid.cz?subject=Poptávka - Zabezpečení objektu"
-                  className="inline-block bg-white text-security-600 px-8 py-4 rounded-lg hover:bg-security-50 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center bg-white text-neutral-900 px-8 py-4 rounded-full hover:bg-neutral-100 transition-colors font-heading font-semibold text-center"
                 >
                   info@unigrid.cz
                 </a>
                 <Link
                   href="/"
-                  className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-colors font-heading font-semibold text-center"
                 >
                   Zpět na hlavní stránku
                 </Link>

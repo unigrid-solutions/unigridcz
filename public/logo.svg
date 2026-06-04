@@ -5,25 +5,25 @@
     <circle cx="26" cy="30" r="8" fill="#1f2937"/>
 
     <!-- Radiating connections -->
-    <!-- Top-left (blue) -->
-    <line x1="26" y1="30" x2="8" y2="14" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="8" cy="14" r="5" fill="#2563eb"/>
+    <!-- Top-left (teal) -->
+    <line x1="26" y1="30" x2="8" y2="14" stroke="#0d9488" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="8" cy="14" r="5" fill="#0d9488"/>
 
-    <!-- Top-right (orange) -->
+    <!-- Top-right (amber) -->
     <line x1="26" y1="30" x2="44" y2="14" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
     <circle cx="44" cy="14" r="5" fill="#f59e0b"/>
 
-    <!-- Right (red) -->
-    <line x1="26" y1="30" x2="48" y2="30" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="48" cy="30" r="5" fill="#dc2626"/>
+    <!-- Right (slate) -->
+    <line x1="26" y1="30" x2="48" y2="30" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="48" cy="30" r="5" fill="#475569"/>
 
-    <!-- Bottom-right (green) -->
-    <line x1="26" y1="30" x2="44" y2="46" stroke="#16a34a" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="44" cy="46" r="5" fill="#16a34a"/>
+    <!-- Bottom-right (teal light) -->
+    <line x1="26" y1="30" x2="44" y2="46" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="44" cy="46" r="5" fill="#2dd4bf"/>
 
-    <!-- Bottom-left (light blue) -->
-    <line x1="26" y1="30" x2="8" y2="46" stroke="#60a5fa" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="8" cy="46" r="5" fill="#60a5fa"/>
+    <!-- Bottom-left (amber light) -->
+    <line x1="26" y1="30" x2="8" y2="46" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="8" cy="46" r="5" fill="#fbbf24"/>
 
     <!-- White center dot -->
     <circle cx="26" cy="30" r="3" fill="white"/>
@@ -34,7 +34,7 @@
     <text x="62" y="34" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
       <tspan fill="#1f2937">UNIGRID</tspan>
     </text>
-    <text x="62" y="47" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" letter-spacing="1.5" fill="#6b7280">
+    <text x="62" y="47" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" letter-spacing="1.5" fill="#64748b">
       SOLUTIONS
     </text>
   </g>

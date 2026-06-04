@@ -26,31 +26,34 @@ export default function MarTelemetrie() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-16 md:pt-20">
-          <div className="bg-gradient-to-br from-primary-50 via-energy-50 to-white">
+        <section className="pt-20 md:pt-24 noise-bg">
+          <div className="dot-grid">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
               <div className="max-w-4xl">
-                <div className="inline-block bg-primary-100 text-primary-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                  Průmyslová automatizace
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="h-px w-12 bg-primary-600"></div>
+                  <span className="font-mono text-xs tracking-widest uppercase text-primary-600">
+                    Průmyslová automatizace
+                  </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight tracking-tight mb-6">
                   <span className="text-primary-600">MaR a Telemetrie</span> pro
                   efektivní řízení
                 </h1>
-                <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-neutral-500 mb-8 leading-relaxed">
                   Měření, regulace a vzdálený monitoring technologických systémů.
                   Získejte přehled o svých procesech kdykoliv a odkudkoliv.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="#kontakt"
-                    className="inline-block bg-primary-600 text-white px-8 py-4 rounded-lg hover:bg-primary-700 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center bg-neutral-900 text-white px-8 py-4 rounded-full hover:bg-primary-600 transition-colors font-heading font-semibold text-center"
                   >
                     Poptat řešení
                   </a>
                   <a
                     href="#moznosti"
-                    className="inline-block border-2 border-primary-600 text-primary-600 px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center border-2 border-neutral-300 text-neutral-700 px-8 py-4 rounded-full hover:border-neutral-900 hover:text-neutral-900 transition-colors font-heading font-semibold text-center"
                   >
                     Co nabízíme
                   </a>
@@ -61,11 +64,11 @@ export default function MarTelemetrie() {
         </section>
 
         {/* What is MaR Section */}
-        <section className="py-20 md:py-32 bg-white">
+        <section className="py-20 md:py-32 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+                <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-6">
                   Co je MaR a telemetrie?
                 </h2>
                 <div className="space-y-4 text-neutral-600 leading-relaxed">
@@ -104,7 +107,7 @@ export default function MarTelemetrie() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-900 mb-2">Měření</h3>
+                  <h3 className="font-heading font-bold text-neutral-900 mb-2">Měření</h3>
                   <p className="text-sm text-neutral-600">
                     Přesné snímání fyzikálních veličin
                   </p>
@@ -126,7 +129,7 @@ export default function MarTelemetrie() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-900 mb-2">Regulace</h3>
+                  <h3 className="font-heading font-bold text-neutral-900 mb-2">Regulace</h3>
                   <p className="text-sm text-neutral-600">
                     Automatické udržování požadovaných hodnot
                   </p>
@@ -148,7 +151,7 @@ export default function MarTelemetrie() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-900 mb-2">Telemetrie</h3>
+                  <h3 className="font-heading font-bold text-neutral-900 mb-2">Telemetrie</h3>
                   <p className="text-sm text-neutral-600">
                     Vzdálený přenos dat a monitoring
                   </p>
@@ -170,7 +173,7 @@ export default function MarTelemetrie() {
                       />
                     </svg>
                   </div>
-                  <h3 className="font-bold text-neutral-900 mb-2">Vizualizace</h3>
+                  <h3 className="font-heading font-bold text-neutral-900 mb-2">Vizualizace</h3>
                   <p className="text-sm text-neutral-600">
                     Přehledné zobrazení dat a alarmů
                   </p>
@@ -181,10 +184,10 @@ export default function MarTelemetrie() {
         </section>
 
         {/* Services Section */}
-        <section id="moznosti" className="py-20 md:py-32 bg-neutral-50">
+        <section id="moznosti" className="py-20 md:py-32 bg-neutral-50 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Co nabízíme
               </h2>
               <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
@@ -195,7 +198,7 @@ export default function MarTelemetrie() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Průmyslové měření */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-primary-600"
@@ -211,11 +214,11 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Průmyslové měření
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
-                  Instalace a kalibrace snímačů pro měření teploty, tlaku, průtoku,
+                  Dodávka a instalace snímačů pro měření teploty, tlaku, průtoku,
                   hladiny, vlhkosti a dalších veličin.
                 </p>
                 <ul className="space-y-2 text-sm text-neutral-600">
@@ -241,7 +244,7 @@ export default function MarTelemetrie() {
               </div>
 
               {/* Regulace a řízení */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-energy-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-energy-600"
@@ -263,7 +266,7 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Regulace a řízení
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
@@ -293,7 +296,7 @@ export default function MarTelemetrie() {
               </div>
 
               {/* SCADA a vizualizace */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-primary-600"
@@ -309,7 +312,7 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   SCADA a vizualizace
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
@@ -339,7 +342,7 @@ export default function MarTelemetrie() {
               </div>
 
               {/* Vzdálený monitoring */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-energy-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-energy-600"
@@ -355,7 +358,7 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Vzdálený monitoring
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
@@ -384,8 +387,8 @@ export default function MarTelemetrie() {
                 </ul>
               </div>
 
-              {/* IoT řešení */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              {/* Průmyslová komunikace */}
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-primary-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-primary-600"
@@ -401,37 +404,37 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
-                  IoT řešení
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
+                  Průmyslová komunikace
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
-                  Moderní IoT senzory a platformy pro sběr dat z velkého počtu
-                  měřicích bodů s nízkou spotřebou energie.
+                  Propojení zařízení a sběr dat pomocí průmyslových sběrnic
+                  i moderních IoT technologií.
                 </p>
                 <ul className="space-y-2 text-sm text-neutral-600">
                   <li className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    LoRaWAN senzory
+                    Modbus RTU/TCP
                   </li>
                   <li className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    Cloudové platformy
+                    RS-485
                   </li>
                   <li className="flex items-center gap-2">
                     <svg className="w-4 h-4 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                     </svg>
-                    API integrace
+                    Ethernet/IP
                   </li>
                 </ul>
               </div>
 
               {/* Energetický management */}
-              <div className="bg-white border border-neutral-200 rounded-xl p-8 hover:shadow-lg transition-shadow">
+              <div className="bg-white border border-neutral-200 rounded-2xl p-8 hover:shadow-lg transition-shadow">
                 <div className="w-14 h-14 bg-energy-100 rounded-lg flex items-center justify-center mb-6">
                   <svg
                     className="w-8 h-8 text-energy-600"
@@ -447,7 +450,7 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-3">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-3">
                   Energetický management
                 </h3>
                 <p className="text-neutral-600 leading-relaxed mb-4">
@@ -480,10 +483,10 @@ export default function MarTelemetrie() {
         </section>
 
         {/* Use Cases */}
-        <section className="py-20 md:py-32 bg-white">
+        <section className="py-20 md:py-32 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Kde MaR a telemetrii využijete
               </h2>
             </div>
@@ -501,13 +504,13 @@ export default function MarTelemetrie() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Budovy a TZB</h3>
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Vodohospodářství</h3>
                 <p className="text-sm text-neutral-600">
-                  Řízení vytápění, chlazení, vzduchotechniky a osvětlení
+                  ČOV, čerpací stanice, vodojemy, kanalizace
                 </p>
               </div>
 
@@ -527,7 +530,7 @@ export default function MarTelemetrie() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Energetika</h3>
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Energetika</h3>
                 <p className="text-sm text-neutral-600">
                   Monitoring výroben, trafostanic a distribučních sítí
                 </p>
@@ -545,13 +548,13 @@ export default function MarTelemetrie() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
+                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Vodohospodářství</h3>
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Průmysl</h3>
                 <p className="text-sm text-neutral-600">
-                  Čerpací stanice, vodojemy, čistírny odpadních vod
+                  Výrobní linky, technologické procesy, sklady
                 </p>
               </div>
 
@@ -567,13 +570,13 @@ export default function MarTelemetrie() {
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth={2}
-                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                      d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                     />
                   </svg>
                 </div>
-                <h3 className="font-bold text-neutral-900 mb-2">Průmysl</h3>
+                <h3 className="font-heading font-bold text-neutral-900 mb-2">Budovy</h3>
                 <p className="text-sm text-neutral-600">
-                  Výrobní linky, technologické procesy, sklady
+                  Řízení vytápění, monitoring spotřeby energií
                 </p>
               </div>
             </div>
@@ -581,26 +584,26 @@ export default function MarTelemetrie() {
         </section>
 
         {/* CTA Section */}
-        <section id="kontakt" className="py-20 md:py-32 bg-gradient-to-br from-primary-600 via-primary-700 to-energy-700">
+        <section id="kontakt" className="py-20 md:py-32 bg-neutral-900 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white tracking-tight mb-6">
                 Získejte přehled o svých technologiích
               </h2>
-              <p className="text-lg text-primary-100 mb-8">
+              <p className="text-lg text-neutral-400 mb-8">
                 Kontaktujte nás pro konzultaci. Navrhneme řešení měření a
                 monitoringu přesně podle vašich potřeb.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:info@unigrid.cz?subject=Poptávka - MaR a telemetrie"
-                  className="inline-block bg-white text-primary-600 px-8 py-4 rounded-lg hover:bg-primary-50 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center bg-white text-primary-600 px-8 py-4 rounded-full hover:bg-neutral-100 transition-colors font-heading font-semibold text-center"
                 >
                   info@unigrid.cz
                 </a>
                 <Link
                   href="/"
-                  className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center border-2 border-neutral-600 text-neutral-300 px-8 py-4 rounded-full hover:border-neutral-400 hover:text-white transition-colors font-heading font-semibold text-center"
                 >
                   Zpět na hlavní stránku
                 </Link>

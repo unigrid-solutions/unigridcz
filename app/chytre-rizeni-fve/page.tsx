@@ -25,31 +25,34 @@ export default function ChytreRizeniFVE() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="pt-16 md:pt-20">
-          <div className="bg-gradient-to-br from-energy-50 via-primary-50 to-white">
+        <section className="pt-20 md:pt-24 noise-bg">
+          <div className="dot-grid">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32">
               <div className="max-w-4xl">
-                <div className="inline-block bg-energy-100 text-energy-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                  Fotovoltaika &amp; Energetika
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="h-px w-12 bg-energy-600"></div>
+                  <span className="font-mono text-xs tracking-widest uppercase text-energy-600">
+                    Fotovoltaika &amp; chytré řízení
+                  </span>
                 </div>
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight mb-6">
+                <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-neutral-900 leading-tight tracking-tight mb-6">
                   Chytré řízení{" "}
                   <span className="text-energy-600">fotovoltaických elektráren</span>
                 </h1>
-                <p className="text-lg md:text-xl text-neutral-600 mb-8 leading-relaxed">
+                <p className="text-lg md:text-xl text-neutral-500 mb-8 leading-relaxed">
                   Maximalizujte výnos z vaší FVE. Inteligentní systémy pro řízení
                   spotřeby, akumulace a minimalizaci přetoků do sítě.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
                     href="#kontakt"
-                    className="inline-block bg-energy-600 text-white px-8 py-4 rounded-lg hover:bg-energy-700 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center bg-neutral-900 text-white px-8 py-4 rounded-full hover:bg-energy-600 transition-colors font-heading font-semibold text-center"
                   >
                     Nezávazná konzultace
                   </a>
                   <a
                     href="#jak-to-funguje"
-                    className="inline-block border-2 border-energy-600 text-energy-600 px-8 py-4 rounded-lg hover:bg-energy-50 transition-colors font-semibold text-center"
+                    className="inline-flex items-center justify-center border-2 border-neutral-300 text-neutral-700 px-8 py-4 rounded-full hover:border-neutral-900 hover:text-neutral-900 transition-colors font-heading font-semibold text-center"
                   >
                     Jak to funguje
                   </a>
@@ -60,13 +63,13 @@ export default function ChytreRizeniFVE() {
         </section>
 
         {/* Problem Section */}
-        <section className="py-20 md:py-32 bg-white">
+        <section className="py-20 md:py-32 bg-white noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-6">
                 Nevyužíváte plný potenciál vaší FVE?
               </h2>
-              <p className="text-lg text-neutral-600">
+              <p className="text-lg text-neutral-500">
                 Většina majitelů fotovoltaik ztrácí až 40 % vyrobené energie přetoky
                 do sítě za nevýhodnou výkupní cenu.
               </p>
@@ -89,10 +92,10 @@ export default function ChytreRizeniFVE() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                   Nízká výkupní cena
                 </h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-500">
                   Přetoky do sítě jsou vykupovány za zlomek běžné ceny elektřiny.
                 </p>
               </div>
@@ -113,10 +116,10 @@ export default function ChytreRizeniFVE() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                   Nesoulad výroby a spotřeby
                 </h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-500">
                   FVE vyrábí nejvíce v poledne, kdy jste v práci a spotřeba je
                   minimální.
                 </p>
@@ -138,10 +141,10 @@ export default function ChytreRizeniFVE() {
                     />
                   </svg>
                 </div>
-                <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                   Chybějící automatizace
                 </h3>
-                <p className="text-neutral-600">
+                <p className="text-neutral-500">
                   Ruční spínání spotřebičů je nepraktické a nikdy není optimální.
                 </p>
               </div>
@@ -150,13 +153,13 @@ export default function ChytreRizeniFVE() {
         </section>
 
         {/* Solution Section */}
-        <section id="jak-to-funguje" className="py-20 md:py-32 bg-neutral-50">
+        <section id="jak-to-funguje" className="py-20 md:py-32 bg-neutral-50 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Jak funguje chytré řízení FVE
               </h2>
-              <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
+              <p className="text-lg text-neutral-500 max-w-2xl mx-auto">
                 Automaticky řídíme spotřebiče podle aktuální výroby a spotřeby,
                 abyste využili maximum vlastní energie.
               </p>
@@ -166,13 +169,13 @@ export default function ChytreRizeniFVE() {
               <div className="space-y-8">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-energy-100 rounded-lg flex items-center justify-center">
-                    <span className="text-energy-600 font-bold text-lg">1</span>
+                    <span className="font-mono text-energy-600 font-bold text-lg">1</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                    <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                       Měření v reálném čase
                     </h3>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-500">
                       Systém průběžně monitoruje výrobu FVE, aktuální spotřebu domu a
                       stav baterie (pokud máte).
                     </p>
@@ -181,13 +184,13 @@ export default function ChytreRizeniFVE() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-energy-100 rounded-lg flex items-center justify-center">
-                    <span className="text-energy-600 font-bold text-lg">2</span>
+                    <span className="font-mono text-energy-600 font-bold text-lg">2</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                    <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                       Inteligentní rozhodování
                     </h3>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-500">
                       Algoritmus vyhodnocuje přebytky a automaticky určuje, které
                       spotřebiče zapnout a v jakém pořadí.
                     </p>
@@ -196,13 +199,13 @@ export default function ChytreRizeniFVE() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-energy-100 rounded-lg flex items-center justify-center">
-                    <span className="text-energy-600 font-bold text-lg">3</span>
+                    <span className="font-mono text-energy-600 font-bold text-lg">3</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                    <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                       Automatické řízení
                     </h3>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-500">
                       Bojler, tepelné čerpadlo, bazénová filtrace, nabíjení EV nebo
                       klimatizace se spouští automaticky při přebytcích.
                     </p>
@@ -211,13 +214,13 @@ export default function ChytreRizeniFVE() {
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-energy-100 rounded-lg flex items-center justify-center">
-                    <span className="text-energy-600 font-bold text-lg">4</span>
+                    <span className="font-mono text-energy-600 font-bold text-lg">4</span>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-neutral-900 mb-2">
+                    <h3 className="font-heading text-xl font-bold text-neutral-900 mb-2">
                       Vzdálený monitoring
                     </h3>
-                    <p className="text-neutral-600">
+                    <p className="text-neutral-500">
                       Přehled o výrobě, spotřebě a úsporách máte vždy po ruce v
                       mobilní aplikaci nebo webovém rozhraní.
                     </p>
@@ -226,7 +229,7 @@ export default function ChytreRizeniFVE() {
               </div>
 
               <div className="bg-white rounded-2xl p-8 shadow-lg">
-                <h3 className="text-2xl font-bold text-neutral-900 mb-6">
+                <h3 className="font-heading text-2xl font-bold text-neutral-900 mb-6">
                   Co můžeme řídit
                 </h3>
                 <ul className="space-y-4">
@@ -236,8 +239,7 @@ export default function ChytreRizeniFVE() {
                     "Klimatizace a chlazení",
                     "Bazénová filtrace a ohřev",
                     "Nabíjení elektromobilu",
-                    "Akumulační kamna",
-                    "Průmyslové spotřebiče",
+                    "Další elektrické spotřebiče",
                   ].map((item, index) => (
                     <li key={index} className="flex items-center gap-3">
                       <svg
@@ -261,67 +263,60 @@ export default function ChytreRizeniFVE() {
         </section>
 
         {/* Benefits Section */}
-        <section className="py-20 md:py-32 bg-white">
+        <section className="py-20 md:py-32 bg-white noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-4">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-neutral-900 tracking-tight mb-4">
                 Výhody chytrého řízení
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gradient-to-br from-energy-50 to-white border border-energy-100 rounded-xl p-6 text-center">
-                <div className="text-4xl font-bold text-energy-600 mb-2">
+                <div className="font-mono font-heading text-4xl font-bold text-energy-600 mb-2">
                   až 90 %
                 </div>
-                <p className="text-neutral-600">
+                <p className="text-neutral-500">
                   vlastní spotřeby z vyrobené energie
                 </p>
               </div>
 
               <div className="bg-gradient-to-br from-primary-50 to-white border border-primary-100 rounded-xl p-6 text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">
+                <div className="font-mono font-heading text-4xl font-bold text-primary-600 mb-2">
                   2-4 roky
                 </div>
-                <p className="text-neutral-600">návratnost investice do řízení</p>
-              </div>
-
-              <div className="bg-gradient-to-br from-energy-50 to-white border border-energy-100 rounded-xl p-6 text-center">
-                <div className="text-4xl font-bold text-energy-600 mb-2">0 Kč</div>
-                <p className="text-neutral-600">
-                  měsíční poplatky za provoz systému
-                </p>
+                <p className="text-neutral-500">návratnost investice do řízení</p>
               </div>
 
               <div className="bg-gradient-to-br from-primary-50 to-white border border-primary-100 rounded-xl p-6 text-center">
-                <div className="text-4xl font-bold text-primary-600 mb-2">24/7</div>
-                <p className="text-neutral-600">automatický provoz bez zásahu</p>
+                <div className="font-mono font-heading text-4xl font-bold text-primary-600 mb-2">24/7</div>
+                <p className="text-neutral-500">automatický provoz bez zásahu</p>
               </div>
             </div>
           </div>
         </section>
 
         {/* CTA Section */}
-        <section id="kontakt" className="py-20 md:py-32 bg-gradient-to-br from-energy-600 to-primary-700">
+        <section id="kontakt" className="py-20 md:py-32 bg-neutral-900 noise-bg">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-white tracking-tight mb-6">
                 Začněte využívat maximum z vaší FVE
               </h2>
-              <p className="text-lg text-energy-100 mb-8">
+              <p className="text-lg text-neutral-400 mb-8">
                 Kontaktujte nás pro nezávaznou konzultaci. Zanalyzujeme vaši situaci
                 a navrhneme optimální řešení.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="mailto:info@unigrid.cz?subject=Poptávka - Chytré řízení FVE"
-                  className="inline-block bg-white text-energy-600 px-8 py-4 rounded-lg hover:bg-energy-50 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center bg-white text-energy-600 px-8 py-4 rounded-full hover:bg-energy-50 transition-colors font-heading font-semibold text-center"
                 >
                   info@unigrid.cz
                 </a>
                 <Link
                   href="/"
-                  className="inline-block border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white/10 transition-colors font-semibold text-center"
+                  className="inline-flex items-center justify-center border-2 border-white text-white px-8 py-4 rounded-full hover:bg-white/10 transition-colors font-heading font-semibold text-center"
                 >
                   Zpět na hlavní stránku
                 </Link>
