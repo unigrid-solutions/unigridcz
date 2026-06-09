@@ -1,0 +1,47 @@
+<svg width="260" height="60" viewBox="0 0 260 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract network hub -->
+  <g id="logo-icon">
+    <circle cx="26" cy="24" r="8" fill="#1f2937"/>
+
+    <!-- Top-left (teal) -->
+    <line x1="26" y1="24" x2="8" y2="8" stroke="#0d9488" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="8" cy="8" r="5" fill="#0d9488"/>
+
+    <!-- Top-right (amber) -->
+    <line x1="26" y1="24" x2="44" y2="8" stroke="#f59e0b" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="44" cy="8" r="5" fill="#f59e0b"/>
+
+    <!-- Right (slate) -->
+    <line x1="26" y1="24" x2="48" y2="24" stroke="#475569" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="48" cy="24" r="5" fill="#475569"/>
+
+    <!-- Bottom-right (teal light) -->
+    <line x1="26" y1="24" x2="44" y2="40" stroke="#2dd4bf" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="44" cy="40" r="5" fill="#2dd4bf"/>
+
+    <!-- Bottom-left (amber light) -->
+    <line x1="26" y1="24" x2="8" y2="40" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="8" cy="40" r="5" fill="#fbbf24"/>
+
+    <!-- White center dot -->
+    <circle cx="26" cy="24" r="3" fill="white"/>
+  </g>
+
+  <!-- Text -->
+  <g id="logo-text">
+    <text x="62" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5">
+      <tspan fill="#1f2937">UNIGRID</tspan>
+    </text>
+    <text x="62" y="41" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="400" letter-spacing="1.5" fill="#64748b">
+      SOLUTIONS
+    </text>
+  </g>
+
+  <!-- Claim -->
+  <g id="claim">
+    <line x1="62" y1="49" x2="250" y2="49" stroke="#e2e8f0" stroke-width="0.5"/>
+    <text x="62" y="58" font-family="system-ui, -apple-system, sans-serif" font-size="7.5" font-weight="400" letter-spacing="1.2" fill="#94a3b8">
+      VÁŠ PARTNER V TECHNOLOGIÍCH
+    </text>
+  </g>
+</svg>

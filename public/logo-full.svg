@@ -1,0 +1,41 @@
+<svg width="400" height="120" viewBox="0 0 400 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Abstract network hub with radiating connections -->
+  <g id="logo-icon" transform="translate(20, 10)">
+    <!-- Central hub -->
+    <circle cx="50" cy="50" r="16" fill="#1f2937"/>
+
+    <!-- Radiating connections -->
+    <!-- Top-left (teal) -->
+    <line x1="50" y1="50" x2="14" y2="18" stroke="#0d9488" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="14" cy="18" r="9" fill="#0d9488"/>
+
+    <!-- Top-right (amber) -->
+    <line x1="50" y1="50" x2="86" y2="18" stroke="#f59e0b" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="86" cy="18" r="9" fill="#f59e0b"/>
+
+    <!-- Right (slate) -->
+    <line x1="50" y1="50" x2="94" y2="50" stroke="#475569" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="94" cy="50" r="9" fill="#475569"/>
+
+    <!-- Bottom-right (teal light) -->
+    <line x1="50" y1="50" x2="86" y2="82" stroke="#2dd4bf" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="86" cy="82" r="9" fill="#2dd4bf"/>
+
+    <!-- Bottom-left (amber light) -->
+    <line x1="50" y1="50" x2="14" y2="82" stroke="#fbbf24" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="14" cy="82" r="9" fill="#fbbf24"/>
+
+    <!-- White center dot -->
+    <circle cx="50" cy="50" r="6" fill="white"/>
+  </g>
+
+  <!-- Text: UNIGRID -->
+  <g id="logo-text">
+    <text x="142" y="62" font-family="system-ui, -apple-system, sans-serif" font-size="48" font-weight="700" letter-spacing="-1">
+      <tspan fill="#1f2937">UNIGRID</tspan>
+    </text>
+    <text x="142" y="86" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="400" letter-spacing="3" fill="#64748b">
+      SOLUTIONS
+    </text>
+  </g>
+</svg>
