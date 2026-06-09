@@ -14,7 +14,7 @@ export default function Home() {
                 <div className="flex items-center gap-3 mb-8 opacity-0 animate-fade-in">
                   <div className="h-px w-12 bg-primary-600"></div>
                   <span className="font-mono text-xs tracking-widest uppercase text-primary-600">
-                    Unigrid Solutions
+                    Váš partner v technologiích
                   </span>
                 </div>
 

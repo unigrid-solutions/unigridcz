@@ -7,9 +7,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
           {/* Company Info */}
           <div className="md:col-span-4">
-            <h3 className="font-heading text-xl font-bold text-white mb-3">
+            <h3 className="font-heading text-xl font-bold text-white mb-1">
               Unigrid Solutions
             </h3>
+            <p className="font-mono text-xs text-neutral-500 tracking-wide mb-5">
+              Váš partner v technologiích
+            </p>
             <p className="text-sm text-neutral-500 leading-relaxed mb-6">
               Automatizace, FVE a zabezpečení.
               <br />
